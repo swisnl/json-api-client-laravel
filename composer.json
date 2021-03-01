@@ -1,0 +1,57 @@
+{
+    "name": "swisnl/json-api-client-laravel",
+    "type": "library",
+    "description": "A PHP package for mapping remote JSON:API resources to Eloquent like models and collections.",
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "swisnl/json-api-client": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "graham-campbell/testbench": "^5.5",
+        "phpunit/phpunit": "^6.5|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swis\\JsonApi\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Swis\\JsonApi\\Client\\Tests\\" : "tests/",
+            "Swis\\JsonApi\\Client\\Tests\\Mocks\\" : "tests/_mocks/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jasper Zonneveld",
+            "email": "jasper@swis.nl"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "php-cs-fixer fix --dry-run -v",
+        "fix-style": "php-cs-fixer fix"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Swis\\JsonApi\\Client\\Providers\\ServiceProvider"
+            ],
+            "aliases":{
+                "DocumentFactory": "Swis\\JsonApi\\Client\\Facades\\DocumentFactoryFacade",
+                "DocumentParser": "Swis\\JsonApi\\Client\\Facades\\DocumentParserFacade",
+                "ItemHydrator": "Swis\\JsonApi\\Client\\Facades\\ItemHydratorFacade",
+                "ResponseParser": "Swis\\JsonApi\\Client\\Facades\\ResponseParserFacade",
+                "TypeMapper": "Swis\\JsonApi\\Client\\Facades\\TypeMapperFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

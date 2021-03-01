@@ -1,0 +1,28 @@
+language: php
+
+matrix:
+  include:
+  - php: "7.2"
+    env: LARAVEL_VERSION="^6.0" RUN_CS_FIXER=1
+  - php: "7.3"
+    env: LARAVEL_VERSION="^7.0"
+  - php: "7.4"
+    env: LARAVEL_VERSION="^8.0"
+
+sudo: false
+
+install:
+  - composer require "illuminate/support:${LARAVEL_VERSION}" --no-update --no-interaction
+  - travis_retry composer install --no-interaction --prefer-dist
+
+script:
+  - if [ "$RUN_CS_FIXER" ] ; then vendor/bin/php-cs-fixer fix -v --dry-run --using-cache=no ; fi
+  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.xml
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.xml
+
+branches:
+  only:
+    - master
