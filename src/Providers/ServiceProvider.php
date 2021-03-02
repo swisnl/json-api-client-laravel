@@ -19,8 +19,8 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            dirname(__DIR__, 2).'/config/json-api.php',
-            'json-api'
+            dirname(__DIR__, 2).'/config/json-api-client.php',
+            'json-api-client'
         );
 
         $this->registerSharedTypeMapper();
@@ -52,7 +52,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->app->extend(
             ClientInterface::class,
             static function (ClientInterface $client) {
-                if ($baseUri = config('json-api.base_uri')) {
+                if ($baseUri = config('json-api-client.base_uri')) {
                     $client->setBaseUri($baseUri);
                 }
 

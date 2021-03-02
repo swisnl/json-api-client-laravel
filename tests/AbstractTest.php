@@ -15,8 +15,8 @@ abstract class AbstractTest extends TestCase
     protected function getEnvironmentSetUp($app)
     {
         // Import default settings
-        $defaultSettings = require __DIR__.'/../config/json-api.php';
-        $app['config']->set('json-api', $defaultSettings);
+        $defaultSettings = require __DIR__.'/../config/json-api-client.php';
+        $app['config']->set('json-api-client', $defaultSettings);
     }
 
     protected function getPackageProviders($app)
