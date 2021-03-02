@@ -79,7 +79,28 @@ php artisan vendor:publish --provider="Swis\JsonApi\Client\Providers\ServiceProv
 
 ## Getting started
 
-TODO
+Simply let the container inject the `DocumentClient` and you're good to go!
+
+``` php
+use Swis\JsonApi\Client\DocumentClient;
+
+class RecipeController extends Controller
+{
+    public function index(DocumentClient $client)
+    {
+        $document = $client->get('https://cms.contentacms.io/api/recipes');
+    
+        /** @var \Swis\JsonApi\Client\Collection&\Swis\JsonApi\Client\Item[] $collection */
+        $recipes = $document->getData();
+        
+        foreach ($recipes as $recipe) {
+            // Do stuff with the recipe
+        }
+    }
+}
+```
+
+Take a look at [swisnl/json-api-client](https://github.com/swisnl/json-api-client) for more usage information.
 
 
 ## Service Provider
