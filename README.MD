@@ -1,4 +1,4 @@
-# { json:api } Client
+# { json:api } Client Laravel
 
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/swisnl/json-api-client-laravel.svg)](https://packagist.org/packages/swisnl/json-api-client-laravel)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/swisnl/json-api-client-laravel.svg)](https://packagist.org/packages/swisnl/json-api-client-laravel)
@@ -89,7 +89,29 @@ Each section can be overwritten to allow extended customization.
 
 ### Bind TypeMapper
 
-The service provider registers the `TypeMapper` as a singleton so your entire application has the same mappings available.
+The service provider registers the `\Swis\JsonApi\Client\TypeMapper` as a singleton so your entire application has the same mappings available.
+
+#### Mapping types
+
+You can manually register items with the `TypeMapper` or use the supplied `TypeMapperServiceProvider`:
+
+``` php
+use Swis\JsonApi\Client\Providers\TypeMapperServiceProvider as BaseTypeMapperServiceProvider;
+
+class TypeMapperServiceProvider extends BaseTypeMapperServiceProvider
+{
+    /**
+     * A list of class names implementing \Swis\JsonApi\Client\Interfaces\ItemInterface.
+     *
+     * @var string[]
+     */
+    protected $items = [
+        \App\Items\Author::class,
+        \App\Items\Blog::class,
+        \App\Items\Comment::class,
+    ];
+}
+```
 
 ### Bind Clients
 
