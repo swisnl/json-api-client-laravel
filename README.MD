@@ -90,7 +90,7 @@ class RecipeController extends Controller
     {
         $document = $client->get('https://cms.contentacms.io/api/recipes');
     
-        /** @var \Swis\JsonApi\Client\Collection&\Swis\JsonApi\Client\Item[] $collection */
+        /** @var \Swis\JsonApi\Client\Collection&\Swis\JsonApi\Client\Item[] $recipes */
         $recipes = $document->getData();
         
         foreach ($recipes as $recipe) {
