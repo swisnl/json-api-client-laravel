@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Swis\JsonApi\Client\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;

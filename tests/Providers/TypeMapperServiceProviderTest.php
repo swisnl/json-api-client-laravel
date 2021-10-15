@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Swis\JsonApi\Client\Tests\Providers;
 
 use Swis\JsonApi\Client\Tests\AbstractTest;
