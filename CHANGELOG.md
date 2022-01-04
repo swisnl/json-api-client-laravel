@@ -1,22 +1,19 @@
 # Changelog
+All notable changes to this project will be documented in this file.
 
-All notable changes to `:package_name` will be documented in this file.
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
+## [Unreleased]
 
-## NEXT - YYYY-MM-DD
+* Nothing
 
-### Added
-- Nothing
+## [1.0.0] - 2022-01-04
 
-### Deprecated
-- Nothing
+### Changed
 
-### Fixed
-- Nothing
+* All classes now use strict typing [#1](https://github.com/swisnl/json-api-client-laravel/pull/1).
 
 ### Removed
-- Nothing
 
-### Security
-- Nothing
+* Dropped PHP <7.3 support.
