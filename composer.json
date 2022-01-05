@@ -53,7 +53,5 @@
                 "TypeMapper": "Swis\\JsonApi\\Client\\Facades\\TypeMapperFacade"
             }
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
