@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.com/swisnl/json-api-client-laravel.svg?branch=master)](https://travis-ci.com/github/swisnl/json-api-client-laravel)
 [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/coverage/g/swisnl/json-api-client-laravel.svg)](https://scrutinizer-ci.com/g/swisnl/json-api-client-laravel/?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/swisnl/json-api-client-laravel.svg)](https://scrutinizer-ci.com/g/swisnl/json-api-client-laravel/?branch=master)
-[![Made by SWIS](https://img.shields.io/badge/%F0%9F%9A%80-made%20by%20SWIS-%23D9021B.svg)](https://www.swis.nl)
+[![Made by SWIS](https://img.shields.io/badge/%F0%9F%9A%80-made%20by%20SWIS-%230737A9.svg)](https://www.swis.nl)
 
 This package contains some Laravel specific classes to make it easier to use [swisnl/json-api-client](https://github.com/swisnl/json-api-client) with Laravel.
 
