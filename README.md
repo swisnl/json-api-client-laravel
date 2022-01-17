@@ -17,7 +17,7 @@ This package contains some Laravel specific classes to make it easier to use [sw
 composer require swisnl/json-api-client-laravel
 ```
 
-N.B. Make sure you have installed a PSR-18 HTTP Client and PSR-17 HTTP Factories before you install this package or install one at the same time e.g. `composer require swisnl/json-api-client guzzlehttp/guzzle:^7.3`.
+N.B. Make sure you have installed a PSR-18 HTTP Client and PSR-17 HTTP Factories before you install this package or install one at the same time e.g. `composer require swisnl/json-api-client-laravel guzzlehttp/guzzle:^7.3`.
 
 ### HTTP Client
 
