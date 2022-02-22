@@ -103,6 +103,26 @@ class RecipeController extends Controller
 
 Take a look at [swisnl/json-api-client](https://github.com/swisnl/json-api-client) for more usage information.
 
+### Laravel HTTP Client
+
+You can also use the built-in [HTTP Client](https://laravel.com/docs/http-client) of Laravel if you prefer. Please note this requires Laravel 7+.
+
+``` php
+use Illuminate\Support\Facades\Http;
+use Swis\JsonApi\Client\Facades\DocumentFactoryFacade;
+use Swis\JsonApi\Client\Item;
+
+$recipe = (new Item())
+    ->setType('recipes')
+    ->fill([
+        'title' => 'Frankfurter salad with mustard dressing',
+    ]);
+
+$document = Http::asJsonApi() // Sets the Content-Type and Accept headers to 'application/vnd.api+json'.
+    ->post('https://cms.contentacms.io/api/recipes', DocumentFactoryFacade::make($recipe))
+    ->jsonApi(); // Parses the response into a JSON:API document.
+```
+
 
 ## Service Provider
 
