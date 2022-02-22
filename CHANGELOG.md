@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Nothing
 
+## [1.1.0] - 2022-02-22
+
+### Added
+
+* Added Laravel HTTP Client macros to consume JSON:API documents [#2](https://github.com/swisnl/json-api-client-laravel/pull/2).
+
 ## [1.0.1] - 2022-02-08
 
 ### Added
