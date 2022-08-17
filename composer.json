@@ -9,7 +9,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
-        "graham-campbell/testbench": "^5.5",
+        "graham-campbell/testbench": "^5.7",
         "guzzlehttp/guzzle": "^7.3",
         "guzzlehttp/psr7": "^2.1",
         "phpunit/phpunit": "^9.5"
