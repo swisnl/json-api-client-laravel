@@ -6,7 +6,7 @@ namespace Swis\JsonApi\Client\Tests\Providers;
 
 use Swis\JsonApi\Client\Tests\AbstractTest;
 use Swis\JsonApi\Client\Tests\Mocks\Items\ChildItem;
-use Swis\JsonApi\Client\Tests\Mocks\Items\MasterItem;
+use Swis\JsonApi\Client\Tests\Mocks\Items\ParentItem;
 use Swis\JsonApi\Client\Tests\Mocks\MockTypeMapperServiceProvider;
 use Swis\JsonApi\Client\TypeMapper;
 
@@ -23,7 +23,7 @@ class TypeMapperServiceProviderTest extends AbstractTest
             ->method('setMapping')
             ->withConsecutive(
                 ['child', ChildItem::class],
-                ['master', MasterItem::class]
+                ['parent', ParentItem::class]
             );
 
         $provider->boot($typeMapper);
