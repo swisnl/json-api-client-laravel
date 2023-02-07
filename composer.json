@@ -4,7 +4,7 @@
     "description": "A PHP package for mapping remote JSON:API resources to Eloquent like models and collections.",
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
         "swisnl/json-api-client": "^2.0"
     },
     "require-dev": {
