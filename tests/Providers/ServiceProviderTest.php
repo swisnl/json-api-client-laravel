@@ -33,8 +33,8 @@ class ServiceProviderTest extends AbstractTest
 
         // assert
         Http::assertSent(static function (Request $request) {
-            return $request->hasHeader('Content-Type', 'application/vnd.api+json') &&
-                $request->hasHeader('Accept', 'application/vnd.api+json');
+            return $request->hasHeader('Content-Type', 'application/vnd.api+json')
+                && $request->hasHeader('Accept', 'application/vnd.api+json');
         });
     }
 
