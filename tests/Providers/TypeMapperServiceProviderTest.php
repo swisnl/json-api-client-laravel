@@ -21,10 +21,19 @@ class TypeMapperServiceProviderTest extends AbstractTestCase
         $typeMapper = $this->createMock(TypeMapper::class);
         $typeMapper->expects($this->exactly(2))
             ->method('setMapping')
-            ->withConsecutive(
-                ['child', ChildItem::class],
-                ['parent', ParentItem::class]
-            );
+            ->willReturnCallback(function (string $type, string $class) {
+                static $i = 0;
+                switch (++$i) {
+                    case 1:
+                        $this->assertEquals('child', $type);
+                        $this->assertEquals(ChildItem::class, $class);
+                        break;
+                    case 2:
+                        $this->assertEquals('parent', $type);
+                        $this->assertEquals(ParentItem::class, $class);
+                        break;
+                }
+            });
 
         $provider->boot($typeMapper);
     }
