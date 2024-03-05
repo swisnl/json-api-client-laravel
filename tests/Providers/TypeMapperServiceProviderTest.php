@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Swis\JsonApi\Client\Tests\Providers;
 
-use Swis\JsonApi\Client\Tests\AbstractTest;
+use Swis\JsonApi\Client\Tests\AbstractTestCase;
 use Swis\JsonApi\Client\Tests\Mocks\Items\ChildItem;
 use Swis\JsonApi\Client\Tests\Mocks\Items\ParentItem;
 use Swis\JsonApi\Client\Tests\Mocks\MockTypeMapperServiceProvider;
 use Swis\JsonApi\Client\TypeMapper;
 
-class TypeMapperServiceProviderTest extends AbstractTest
+class TypeMapperServiceProviderTest extends AbstractTestCase
 {
     /**
      * @test

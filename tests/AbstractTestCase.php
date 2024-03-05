@@ -7,7 +7,7 @@ namespace Swis\JsonApi\Client\Tests;
 use Orchestra\Testbench\TestCase;
 use Swis\JsonApi\Client\Providers\ServiceProvider;
 
-abstract class AbstractTest extends TestCase
+abstract class AbstractTestCase extends TestCase
 {
     /**
      * Define environment setup.

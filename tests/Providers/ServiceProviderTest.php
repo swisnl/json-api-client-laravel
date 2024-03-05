@@ -7,9 +7,9 @@ namespace Swis\JsonApi\Client\Tests\Providers;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Swis\JsonApi\Client\Document;
-use Swis\JsonApi\Client\Tests\AbstractTest;
+use Swis\JsonApi\Client\Tests\AbstractTestCase;
 
-class ServiceProviderTest extends AbstractTest
+class ServiceProviderTest extends AbstractTestCase
 {
     protected function setUp(): void
     {
