@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Nothing.
 
+## [1.2.1] - 2024-03-05
+
+### Added
+
+* Added support for Laravel 11 [#8](https://github.com/swisnl/json-api-client-laravel/issues/8).
+
 ## [1.2.0] - 2023-02-16
 
 ### Added
