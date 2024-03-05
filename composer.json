@@ -12,7 +12,7 @@
         "guzzlehttp/guzzle": "^7.3",
         "guzzlehttp/psr7": "^2.1",
         "orchestra/testbench": "^6.15|^7.0|^8.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5|^10.5"
     },
     "autoload": {
         "psr-4": {
