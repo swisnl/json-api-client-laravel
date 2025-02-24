@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Nothing.
 
+## [1.3.0] - 2025-02-24
+
+### Added
+
+* Added support for Laravel 12 [#9](https://github.com/swisnl/json-api-client-laravel/issues/9).
+
+### Removed
+
+* Dropped PHP <8.0 support.
+
 ## [1.2.1] - 2024-03-05
 
 ### Added
