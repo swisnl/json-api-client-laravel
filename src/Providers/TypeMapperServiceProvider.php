@@ -16,9 +16,6 @@ class TypeMapperServiceProvider extends BaseServiceProvider
      */
     protected $items = [];
 
-    /**
-     * @param \Swis\JsonApi\Client\Interfaces\TypeMapperInterface $typeMapper
-     */
     public function boot(TypeMapperInterface $typeMapper)
     {
         foreach ($this->items as $class) {

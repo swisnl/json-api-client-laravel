@@ -75,12 +75,12 @@ class ServiceProvider extends BaseServiceProvider
 
     protected function registerLaravelHttpClientMacros(): void
     {
-        if (!class_exists(Http::class)) {
+        if (! class_exists(Http::class)) {
             // N.B. The HTTP Client was introduced in Laravel 7.
             return;
         }
 
-        if (!PendingRequest::hasMacro('asJsonApi')) {
+        if (! PendingRequest::hasMacro('asJsonApi')) {
             PendingRequest::macro('asJsonApi', function (): PendingRequest {
                 /* @var \Illuminate\Http\Client\PendingRequest $this */
                 return $this->bodyFormat('json')
@@ -89,7 +89,7 @@ class ServiceProvider extends BaseServiceProvider
             });
         }
 
-        if (!Response::hasMacro('jsonApi')) {
+        if (! Response::hasMacro('jsonApi')) {
             Response::macro('jsonApi', function (): DocumentInterface {
                 /* @var \Illuminate\Http\Client\Response $this */
                 return ResponseParserFacade::parse($this->toPsrResponse());

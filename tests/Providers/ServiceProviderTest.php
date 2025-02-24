@@ -13,7 +13,7 @@ class ServiceProviderTest extends AbstractTestCase
 {
     protected function setUp(): void
     {
-        if (!class_exists(Http::class)) {
+        if (! class_exists(Http::class)) {
             $this->markTestSkipped('The Laravel HTTP Client is not available.');
         }
 
@@ -23,7 +23,7 @@ class ServiceProviderTest extends AbstractTestCase
     /**
      * @test
      */
-    public function itRegistersHttpFacadeMacroForRequest(): void
+    public function it_registers_http_facade_macro_for_request(): void
     {
         // arrange
         Http::fake();
@@ -41,7 +41,7 @@ class ServiceProviderTest extends AbstractTestCase
     /**
      * @test
      */
-    public function itRegistersHttpFacadeMacroForResponse(): void
+    public function it_registers_http_facade_macro_for_response(): void
     {
         // arrange
         Http::fake();

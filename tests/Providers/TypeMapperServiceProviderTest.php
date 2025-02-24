@@ -15,7 +15,7 @@ class TypeMapperServiceProviderTest extends AbstractTestCase
     /**
      * @test
      */
-    public function itRegistersTypesWithTheTypeMapper()
+    public function it_registers_types_with_the_type_mapper()
     {
         $provider = new MockTypeMapperServiceProvider($this->app);
         $typeMapper = $this->createMock(TypeMapper::class);
