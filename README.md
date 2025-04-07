@@ -2,7 +2,7 @@
 
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/swisnl/json-api-client-laravel.svg)](https://packagist.org/packages/swisnl/json-api-client-laravel)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/swisnl/json-api-client-laravel.svg)](https://packagist.org/packages/swisnl/json-api-client-laravel)
-[![Software License](https://img.shields.io/packagist/l/swisnl/json-api-client-laravel.svg)](LICENSE)
+[![Software License](https://img.shields.io/packagist/l/swisnl/json-api-client-laravel.svg)](LICENSE.md)
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen.svg)](https://plant.treeware.earth/swisnl/json-api-client-laravel)
 [![Build Status](https://img.shields.io/github/checks-status/swisnl/json-api-client-laravel/master?label=tests)](https://github.com/swisnl/json-api-client-laravel/actions/workflows/tests.yml)
 [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/coverage/g/swisnl/json-api-client-laravel.svg)](https://scrutinizer-ci.com/g/swisnl/json-api-client-laravel/?branch=master)
@@ -216,7 +216,7 @@ If you discover any security related issues, please email security@swis.nl inste
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 This package is [Treeware](https://treeware.earth). If you use it in production, then we ask that you [**buy the world a tree**](https://plant.treeware.earth/swisnl/json-api-client-laravel) to thank us for our work. By contributing to the Treeware forest you’ll be creating employment for local families and restoring wildlife habitats.
 
