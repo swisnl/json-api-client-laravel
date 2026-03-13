@@ -10,7 +10,7 @@ use Swis\JsonApi\Client\ItemHydrator;
 /**
  * @method static \Swis\JsonApi\Client\Interfaces\ItemInterface hydrate(\Swis\JsonApi\Client\Interfaces\ItemInterface $item, array $attributes, string $id = null)
  *
- * @see \Swis\JsonApi\Client\ItemHydrator
+ * @see ItemHydrator
  */
 class ItemHydratorFacade extends Facade
 {

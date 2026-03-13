@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Swis\JsonApi\Client\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Swis\JsonApi\Client\Interfaces\ItemInterface;
 use Swis\JsonApi\Client\Interfaces\TypeMapperInterface;
 
 class TypeMapperServiceProvider extends BaseServiceProvider
@@ -19,7 +20,7 @@ class TypeMapperServiceProvider extends BaseServiceProvider
     public function boot(TypeMapperInterface $typeMapper)
     {
         foreach ($this->items as $class) {
-            /** @var \Swis\JsonApi\Client\Interfaces\ItemInterface $item */
+            /** @var ItemInterface $item */
             $item = $this->app->make($class);
 
             $typeMapper->setMapping($item->getType(), $class);

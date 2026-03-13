@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Swis\JsonApi\Client\Tests;
 
+use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 use Swis\JsonApi\Client\Providers\ServiceProvider;
 
@@ -12,7 +13,7 @@ abstract class AbstractTestCase extends TestCase
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      */
     protected function getEnvironmentSetUp($app)
     {

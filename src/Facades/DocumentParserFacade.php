@@ -10,7 +10,7 @@ use Swis\JsonApi\Client\Interfaces\DocumentParserInterface;
 /**
  * @method static \Swis\JsonApi\Client\Interfaces\DocumentInterface parse(string $json)
  *
- * @see \Swis\JsonApi\Client\Interfaces\DocumentParserInterface
+ * @see DocumentParserInterface
  */
 class DocumentParserFacade extends Facade
 {

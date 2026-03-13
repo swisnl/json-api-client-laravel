@@ -10,7 +10,7 @@ use Swis\JsonApi\Client\DocumentFactory;
 /**
  * @method static \Swis\JsonApi\Client\ItemDocument|\Swis\JsonApi\Client\CollectionDocument make(\Swis\JsonApi\Client\Interfaces\DataInterface $data)
  *
- * @see \Swis\JsonApi\Client\DocumentFactory
+ * @see DocumentFactory
  */
 class DocumentFactoryFacade extends Facade
 {

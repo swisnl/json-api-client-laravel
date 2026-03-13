@@ -13,7 +13,7 @@ use Swis\JsonApi\Client\Interfaces\TypeMapperInterface;
  * @method static void removeMapping(string $type)
  * @method static \Swis\JsonApi\Client\Interfaces\ItemInterface getMapping(string $type)
  *
- * @see \Swis\JsonApi\Client\Interfaces\TypeMapperInterface
+ * @see TypeMapperInterface
  */
 class TypeMapperFacade extends Facade
 {
