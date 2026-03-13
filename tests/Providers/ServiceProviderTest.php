@@ -20,10 +20,7 @@ class ServiceProviderTest extends AbstractTestCase
         parent::setUp();
     }
 
-    /**
-     * @test
-     */
-    public function it_registers_http_facade_macro_for_request(): void
+    public function test_it_registers_http_facade_macro_for_request(): void
     {
         // arrange
         Http::fake();
@@ -38,10 +35,7 @@ class ServiceProviderTest extends AbstractTestCase
         });
     }
 
-    /**
-     * @test
-     */
-    public function it_registers_http_facade_macro_for_response(): void
+    public function test_it_registers_http_facade_macro_for_response(): void
     {
         // arrange
         Http::fake();
